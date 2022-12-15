@@ -1,0 +1,148 @@
+*,*:before, :after{
+    box-sizing: border-box;
+}
+/* Level 1,2 */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.main {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 199, 69);
+    padding: 20px;
+}
+.menu {    
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin-right: 20px;
+}
+.flex-container {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+}
+.item1 {
+    text-align: center;
+    flex-basis: 210px;
+    background-color: palevioletred;
+    order: 1;
+}
+.item2 {
+    order: 2;
+}
+article p {
+    margin-bottom: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+.item3 {
+    text-align: center;
+    width: 210px;
+    background-color: cadetblue;
+    order: 3;
+}
+.footer {
+    padding: 20px;
+    background-color: mediumspringgreen;
+    text-align: center;
+}
+article {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+article img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.cardwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.cardwrapper a {
+    border-radius: 7%;
+    padding: 15px;
+    flex-basis: 300px;
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+.cardwrapper a:hover {
+    box-shadow: 0 0 20px 20px rgba(224, 52, 210, 0.22);
+	color: #3a7999;
+	background: rgba(0,0,0,0);
+}
+.button {
+    padding: 5px 20px;
+    background-color: rgb(104, 0, 149);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+/* Level 3 */
+.box {
+    min-height: 200vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.holder {
+    border: 3px solid black;
+    width: 500px; 
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.item {
+    padding: 30px;
+    text-align: center;
+}
+.item:nth-of-type(1) {
+    background-color: chocolate;
+    width: 50%;
+    order: 1;
+    text-align: center;
+}
+.item:nth-of-type(2) {
+    background-color: steelblue;
+    width: calc(100%/3);
+    order: 4;
+}
+.item:nth-of-type(3) {
+    background-color: indigo;
+    width: calc(100%/3);
+    order: 3;
+}
+.item:nth-of-type(4) {
+    background-color: darkgreen;
+    width: calc(100%/3);
+    order: 5;
+}
+.item:nth-of-type(5) {
+    background-color: coral;
+    width: 50%;
+    order: 2;
+}
